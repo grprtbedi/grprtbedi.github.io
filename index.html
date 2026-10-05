@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <!--
+  Emoji favicon (👳🏾‍♂️). Safari 17 (macOS 12) does not show SVG favicons and uses the PNG;
+  other browsers use the SVG, listed last. The PNGs were rendered locally from
+  Apple Color Emoji.
+--> <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png"> <link rel="apple-touch-icon" href="/apple-touch-icon.png"> <link rel="icon" type="image/svg+xml" href="/favicon.svg"> <meta name="generator" content="Astro v7.3.5"> <!-- Font preloads --> <link rel="preload" href="/_astro/inter-latin-400-normal.C38fXH4l.woff2" as="font" type="font/woff2" crossorigin> <link rel="preload" href="/_astro/inter-latin-600-normal.LgqL8muc.woff2" as="font" type="font/woff2" crossorigin> <link rel="preload" href="/_astro/lora-latin-400-normal.DnxXpLNu.woff2" as="font" type="font/woff2" crossorigin> <link rel="preload" href="/_astro/lora-latin-600-normal.B-3RcLOQ.woff2" as="font" type="font/woff2" crossorigin> <!-- Canonical URL --> <link rel="canonical" href="https://grprtbedi.github.io/"> <!-- Primary Meta Tags --> <title>Gurpreet Bedi | Product x Design</title> <meta name="title" content="Gurpreet Bedi | Product x Design"> <meta name="description" content="Design native product operator with over a decade of experience building digital consumer experiences at scale."> <!-- Open Graph / Facebook --> <meta property="og:type" content="website"> <meta property="og:url" content="https://grprtbedi.github.io/"> <meta property="og:title" content="Gurpreet Bedi | Product x Design"> <meta property="og:description" content="Design native product operator with over a decade of experience building digital consumer experiences at scale.">  <!-- Twitter --> <meta property="twitter:card" content="summary"> <meta property="twitter:url" content="https://grprtbedi.github.io/"> <meta property="twitter:title" content="Gurpreet Bedi | Product x Design"> <meta property="twitter:description" content="Design native product operator with over a decade of experience building digital consumer experiences at scale.">  <meta name="astro-view-transitions-enabled" content="true"> <meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CYDbzu1r.js"></script> <script type="module">document.addEventListener(`astro:before-swap`,e=>[...e.newDocument.head.querySelectorAll(`link[as="font"]`)].forEach(e=>e.remove()));</script> <script>
+  function init() {
+    preloadTheme();
+    animate();
+
+    const lightThemeButton = document.getElementById("light-theme-button");
+    lightThemeButton?.addEventListener("click", () => {
+      localStorage.setItem("theme", "light");
+      toggleTheme(false);
+    });
+
+    const darkThemeButton = document.getElementById("dark-theme-button");
+    darkThemeButton?.addEventListener("click", () => {
+      localStorage.setItem("theme", "dark");
+      toggleTheme(true);
+    });
+  }
+
+  function animate() {
+    const animateElements = document.querySelectorAll(".animate");
+
+    animateElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("show");
+      }, index * 150);
+    });
+  }
+
+function toggleTheme(dark) {
+    const css = document.createElement("style");
+
+    css.appendChild(
+      document.createTextNode(
+        `* {
+             -webkit-transition: none !important;
+             -moz-transition: none !important;
+             -o-transition: none !important;
+             -ms-transition: none !important;
+             transition: none !important;
+          }
+        `,
+      )
+    );
+
+    document.head.appendChild(css);
+
+    if (dark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+  window.getComputedStyle(css).opacity;
+    document.head.removeChild(css);
+  }
+
+  // Dark by default. A saved light/dark choice from the theme buttons wins.
+  function preloadTheme() {
+    toggleTheme(localStorage.theme !== "light");
+  }
+
+  document.addEventListener("DOMContentLoaded", () => init());
+  document.addEventListener("astro:after-swap", () => init());
+  preloadTheme();
+</script><link rel="stylesheet" href="/_astro/index.MKUOD59g.css"></head> <body>  <main>  <div class="mx-auto max-w-screen-sm px-5"> <h4 class="animate mb-4 font-semibold text-black dark:text-white">
+Hi, I'm Gurpreet <span class="text-xl">👋🏼</span> </h4> <div class="space-y-16"> <section> <article class="space-y-4 prose-p:my-0"> <p class="animate">
+Design native product operator with over a decade of experience building
+            digital consumer experiences at scale. As a former entrepreneur, I thrive on
+            solving zero-to-one challenges, crafting products that continue to serve
+            millions of people around the world every day.
+</p> <p class="animate">
+My work is inspired by the forward looking potential of Human-AI experiences.
+</p> </article> </section> <section class="animate space-y-4"> <h5 class="font-semibold text-black dark:text-white">
+Let's Connect
+</h5>  <ul class="flex flex-wrap gap-2 font-serif"> <li class="flex gap-x-2 text-nowrap"> <a href="https://app.notion.com/p/gurpreetbedi/Gurpreet-Bedi-7c83424c2629401bbe649c257ea6d787" target="_blank" class="link-body" aria-label="Gurpreet Bedi's writing"> writing </a> / </li><li class="flex gap-x-2 text-nowrap"> <a href="https://linkedin.com/in/gsbedi" target="_blank" class="link-body" aria-label="Gurpreet Bedi on LinkedIn"> linkedin </a> / </li><li class="flex gap-x-2 text-nowrap"> <a href="mailto:hello@gurpreetbedi.org" class="link-body" aria-label="Email Gurpreet Bedi"> mail </a>  </li> </ul> </section> </div>  </div>  </main> <footer class="animate"> <div class="mx-auto max-w-screen-sm px-5">  <div class="flex justify-between items-center"> <div>
+&copy; 2026  |  <span id="footer-quote" class="italic lowercase" data-quotes="[{&quot;TEXT&quot;:&quot;perpetually in beta&quot;}]"> perpetually in beta </span>  </div>  <div class="hidden flex-wrap gap-1 items-center"> <button id="light-theme-button" aria-label="Light theme" class="group size-8 flex items-center justify-center rounded-full"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-black group-hover:dark:stroke-white transition-colors duration-300 ease-in-out"> <circle cx="12" cy="12" r="5"></circle> <line x1="12" y1="1" x2="12" y2="3"></line> <line x1="12" y1="21" x2="12" y2="23"></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line> <line x1="1" y1="12" x2="3" y2="12"></line> <line x1="21" y1="12" x2="23" y2="12"></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line> </svg> </button> <button id="dark-theme-button" aria-label="Dark theme" class="group size-8 flex items-center justify-center rounded-full"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-black group-hover:dark:stroke-white transition-colors duration-300 ease-in-out"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> </div> </div>  </div> </footer><script type="module">var e=`footer-quote`;function t(){let t=document.getElementById(`footer-quote`);if(!t?.dataset.quotes)return;let n=JSON.parse(t.dataset.quotes);if(n.length<2)return;let r=-1;try{r=Number(sessionStorage.getItem(e)??-1)}catch{}let i=r>=0&&r<n.length,a=Math.floor(Math.random()*(i?n.length-1:n.length));i&&a>=r&&a++;try{sessionStorage.setItem(e,String(a))}catch{}t.textContent=n[a].TEXT}document.addEventListener(`astro:page-load`,t);</script> </body> </html>
